@@ -8,17 +8,24 @@
     <title>Javascript Advanced Oppgave 6</title>
   </head>
   <body>
-    <main>
+    <header>
+      <div>
+        <p>Win Streak:</p>
+        <p id="score">0</p>
+      </div>
       <p id="end-text"></p>
+    </header>
+    <main>
       <div id="playing-field">
         <p class="card" id="bot"></p>
         <p class="card" id="player"></p>
       </div>
       <div id="rps-container">
-        <button id="rock">🪨</button>
-        <button id="paper">📄</button>
-        <button id="scissors">✂️</button>
+        <button>🪨</button>
+        <button>📄</button>
+        <button>✂️</button>
       </div>
+      <button id="new-game" class="invisible">New Game</button>
     </main>
   </body>
 </html>
