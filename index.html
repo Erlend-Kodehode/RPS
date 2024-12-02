@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +14,16 @@
     <title>Javascript Advanced Oppgave 6</title>
   </head>
   <body>
-    <header>
-      <div>
-        <p>Win Streak:</p>
-        <p id="score">0</p>
+    <header class="main-font">
+      <div id="score-container">
+        <div>
+          <p>Win Streak:</p>
+          <p id="score"></p>
+        </div>
+        <div>
+          <p>Highest Streak:</p>
+          <p id="high-score"></p>
+        </div>
       </div>
       <p id="end-text"></p>
     </header>
@@ -21,11 +33,16 @@
         <p class="card" id="player"></p>
       </div>
       <div id="rps-container">
-        <button>🪨</button>
-        <button>📄</button>
-        <button>✂️</button>
+        <button class="menu-buttons">🪨</button>
+        <button class="menu-buttons">📄</button>
+        <button class="menu-buttons">✂️</button>
       </div>
-      <button id="new-game" class="invisible">New Game</button>
+      <button id="new-game" class="main-font menu-buttons invisible">
+        New Game
+      </button>
+      <button id="reset" class="main-font menu-buttons invisible">
+        Reset Highscore
+      </button>
     </main>
   </body>
 </html>
