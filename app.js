@@ -1,4 +1,4 @@
-import gsap from "./node_modules/gsap/all.js";
+import { gsap } from "gsap.js";
 const btnContainer = document.querySelector("#rps-container");
 const opponentCard = document.querySelector("#opponent");
 const playerCard = document.querySelector("#player");
